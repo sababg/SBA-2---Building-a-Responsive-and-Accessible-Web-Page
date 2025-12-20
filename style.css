@@ -16,7 +16,7 @@ body {
 
 body,
 html {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 header {
@@ -154,7 +154,7 @@ main {
 }
 
 .card_info_username {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 12x;
     font-weight: 500;
     margin: 0px;
@@ -162,7 +162,7 @@ main {
     color: var(--White);
 }
 .card_info_user-status {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 10x;
     font-weight: 300;
     margin: 0px;
@@ -178,7 +178,7 @@ main {
 .card_title h1 {
     color: var(--White);
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 20px;
     font-weight: 500;
     margin-top: 20px;
@@ -190,7 +190,7 @@ main {
 }
 
 .card_description p {
-    font-size: 13px;
+    font-size: 0.8rem;
     line-height: 16x;
     font-weight: 300;
     margin: 0px;
@@ -219,13 +219,21 @@ form {
     gap: 3px;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar ul {
-        flex-direction: column;
+.input::-webkit-input-placeholder {
+    color: #555555;
+}
+
+@media screen and (min-width: 1024px) {
+    .main_content {
+        width: 90%;
+        gap: 25px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
     .main_content {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -251,16 +259,6 @@ form {
         height: auto;
         grid-row: 5 / 6;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    .main_content {
-        width: 90%;
-        gap: 25px;
-    }
-}
-
-@media screen and (max-width: 600px) {
     form {
         flex-direction: column;
         align-items: flex-start;

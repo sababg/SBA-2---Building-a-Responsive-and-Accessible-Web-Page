@@ -198,24 +198,23 @@
 
   <footer>
     <section aria-labelledby="contact-title" class="footer_container">
-      <h2 id="contact-title">Contact</h2>
+      <h2 id="contact-title">Contact Us</h2>
       <address>
         <p>Email: <a href="mailto:info@example.com">beigisaba@gmail.com</a></p>
         <p>Location: Charlotte, NC</p>
       </address>
 
       <form aria-labelledby="contact-form-title">
-        <h3 id="contact-form-title">Send a Message</h3>
-
         <div class="contact_form_input_container">
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" required aria-describedby="name-help" />
+          <input id="name" name="name" type="text" required aria-describedby="name-help" placeholder="your full name" />
           <small id="name-help">Enter your full name.</small>
         </div>
 
         <div class="contact_form_input_container">
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" required aria-describedby="email-error" />
+          <input id="email" name="email" type="email" required aria-describedby="email-error"
+            placeholder="info@gmail.com" />
           <span id="email-error" role="alert" hidden>
             Please enter a valid email address.
           </span>

@@ -223,13 +223,6 @@ form {
     color: #555555;
 }
 
-@media screen and (min-width: 1024px) {
-    .main_content {
-        width: 90%;
-        gap: 25px;
-    }
-}
-
 @media screen and (max-width: 600px) {
     .navbar ul {
         flex-direction: column;
@@ -267,5 +260,11 @@ form {
     }
     .hero h1 {
         font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main_content {
+        width: 90%;
+        gap: 25px;
     }
 }
